@@ -34,10 +34,6 @@ After logging in, you can manage your stocks by clicking the "My Stocks" link in
 
 The application has a feature that allows you to receive email notifications when a stock's price exceeds a certain threshold. To enable this feature, go to the "Notifications" page and enter the email address where you would like to receive notifications, as well as the stock symbol and threshold price.
 
-## Testing
-
-This application has unit tests implemented using PHPUnit. To run the tests, execute the command `vendor/bin/phpunit` from the root directory of the project.
-
 ## Contributing
 
 If you would like to contribute to this project, please follow these steps:
