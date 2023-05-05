@@ -6,7 +6,7 @@ This is a web application that allows users to manage and keep track of their st
 
 To install this application, follow these steps:
 
-1. Clone the repository to your local machine: `git clone https://github.com/your_username/stocks_app.git`
+1. Clone the repository to your local machine: `git clone https://github.com/gustabin/stocks_app.git`
 2. Install the required dependencies using Composer: `composer install`
 3. Create a MySQL database and import the `database.sql` file provided in the `config` directory.
 4. Create a `.env` file in the root directory and set the database connection variables:
