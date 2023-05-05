@@ -28,11 +28,11 @@ To use the application, you must first create an account by clicking the "Regist
 
 ### Managing Stocks
 
-After logging in, you can manage your stocks by clicking the "My Stocks" link in the navigation bar. From here, you can add new stocks, view your stock history, and delete stocks that you no longer own.
+After logging in, you can manage your stocks by clicking the "My Stocks" link in the navigation bar. From here, you can add new actions and see your history of actions or that of other clients.
 
 ### Email Notifications
 
-The application has a feature that allows you to receive email notifications when a stock's price exceeds a certain threshold. To enable this feature, go to the "Notifications" page and enter the email address where you would like to receive notifications, as well as the stock symbol and threshold price.
+The application has a function that allows you to receive email notifications when you consult a stock.
 
 ## Testing
 
