@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit colors="true">
+  <testsuites>
+    <testsuite name="My Test Suite">
+      <directory>tests</directory>
+    </testsuite>
+  </testsuites>
+</phpunit>
+
+<!-- The `phpunit.xml` file is a configuration file for PHPUnit, 
+a unit testing framework for the PHP programming language. This 
+file specifies settings for the test suite, such as the location 
+of the tests to run and whether to output results with colors. In 
+this particular file, there is a single test suite called "My Test 
+Suite" that includes all the tests in the "tests" directory. -->

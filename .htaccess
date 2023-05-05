@@ -1,0 +1,8 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]
+
+<!-- This file is an Apache web server configuration file and it
+enables URL rewriting. It redirects all requests to the `index.php`
+file if the requested file does not exist. -->
