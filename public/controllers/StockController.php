@@ -41,7 +41,14 @@ class StockController {
         $stock_code = trim($request->getParam('searchStock'));
 
         $userId = isset($_SESSION['userId']);
-        $userName = isset($_SESSION['userName']);
+        if (!isset($_SESSION['userName'])) {
+            return $response->withJson([
+                'error' => true,
+                'message' => 'you must login'
+            ]);
+        }else{
+            $userName = $_SESSION['userName'];
+        }
         if (!isset($userId)) {
             header("Location: ./../../src/login.php");
             exit();

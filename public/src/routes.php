@@ -25,21 +25,22 @@ $app->post('/api/user/create', [$userController, 'create']);
 $app->get('/api/user/verify', [$userController, 'verify']);
 
 // Get -> POST history
-$app->post('/api/history/{userId}', [$stockController, 'history']);
+$app->post('/api/history/', [$stockController, 'history']);
 
-// GET --> POST stooq stock quote online
-$app->post('/api/stocks/{searchStock}', [$stockController, 'stocks']);
+// GET --> POST stooq stock quote online            
+$app->post('/api/stocks/', [$stockController, 'stocks']);
+// $app->post('/api/user/login2', [$stockController, 'stocks']);
 
 $app->get('/', function (Request $request, Response $response) {
-    return $response->withRedirect('/slim/src/stocks.php');
+    return $response->withRedirect('/src/stocks.php');
 });
 
 $app->get('/src/', function (Request $request, Response $response) {
-    return $response->withRedirect('/slim/src/stocks.php');
+    return $response->withRedirect('/src/stocks.php');
 });
 
 $app->get('/app/', function (Request $request, Response $response) {
-    return $response->withRedirect('/slim/src/stocks.php');
+    return $response->withRedirect('/src/stocks.php');
 });
 // This is a PHP file that defines routes for a Slim application. It starts by importing 
 // classes for handling HTTP requests and responses, as well as the Firebase JWT library 

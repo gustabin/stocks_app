@@ -9,7 +9,7 @@ function SearchUser() {
       const email = formData.get('email');
       const password = formData.get('password');
 
-      fetch('/slim/api/user/login', {
+      fetch('/api/user/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -60,7 +60,7 @@ function CreateUser() {
       const email = formData.get('email');
       const password = formData.get('password');
 
-      fetch('/slim/api/user/create', {
+      fetch('/api/user/create', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -104,7 +104,7 @@ function SearchHistory() {
       const formData = new FormData(event.target);
       const searchId = formData.get('searchId');
 
-      fetch('/slim/api/history/searchId=' + searchId, {
+      fetch('/api/history/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -173,7 +173,7 @@ function VerificarToken() {
     window.location.href = 'login.php';
   }
 
-  fetch('/slim/api/user/verify', {
+  fetch('/api/user/verify', {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -208,7 +208,7 @@ function SearchStock() {
     if (document.querySelector('#formDefault').checkValidity()) {
       const formData = new FormData(event.target);
       const searchStock = formData.get('searchStock');
-      fetch('/slim/api/stocks/searchStock=' + searchStock, {
+      fetch('/api/stocks/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -279,7 +279,7 @@ function SearchStock() {
 // responsible for handling different events on a web page such as form submissions and
 // making HTTP requests using the Fetch API.
 
-// The "SearchUser()" function sends a POST request to the "/slim/api/user/login"
+// The "SearchUser()" function sends a POST request to the "/api/user/login"
 // endpoint with the email and password fields from the form. If the response indicates
 // that the user exists and the password is correct, the function sets a token in the
 // session storage and redirects to the "stocks.php" page. If the response indicates an
@@ -288,13 +288,13 @@ function SearchStock() {
 // The "DoLogout()" function clears the session storage and redirects to the "logout.php"
 // page.
 
-// The "CreateUser()" function sends a POST request to the "/slim/api/user/create"
+// The "CreateUser()" function sends a POST request to the "/api/user/create"
 // endpoint with the name, email, and password fields from the form. If the response
 // indicates that the user was created successfully, the function sets a token in the
 // session storage and redirects to the "stocks.php" page. If the response indicates
 // an error, a message is displayed using the SweetAlert library.
 
-// The "SearchHistory()" function sends a POST request to the "/slim/api/history/searchId"
+// The "SearchHistory()" function sends a POST request to the "/api/history/searchId"
 // endpoint with the searchId field from the form. If the response indicates that the
 // search was successful, the function populates a table with the results. If the response
 // indicates an error, a message is displayed using the SweetAlert library.
