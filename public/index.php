@@ -6,15 +6,7 @@ require (__DIR__ . '/vendor/autoload.php');
 require_once (__DIR__ . '/config/db.php');
 
 $app = new \Slim\App;
-// require (__DIR__ . '/src/routes.php');
-
-$app->get('/', function ($request, $response, $args) {
-    return $response->withRedirect('src/login.php');
-});
-
-// $app->get('/', function ($request, $response, $args) {
-//     return $response->withRedirect('src/login.php');
-// });
+require (__DIR__ . '/src/routes.php');
 
 $app->run();
 
