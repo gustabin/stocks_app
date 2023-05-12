@@ -8,15 +8,16 @@ To install this application, follow these steps:
 
 1. Clone the repository to your local machine: `git clone https://github.com/gustabin/stocks_app.git`
 2. Install the required dependencies using Composer: `composer install`
-3. Create a MySQL database and import the `database.sql` file provided in the `config` directory.
-4. Create a `.env` file in the root directory and set the database connection variables:
+3. Move de folder vendor inside folder Public.
+4. Create a MySQL database and import the `database.sql` file provided in the `config` directory.
+5. Create a `.env` file in the root directory and set the database connection variables:
    ```
    DB_HOST=localhost
    DB_NAME=your_database_name
    DB_USER=your_database_username
    DB_PASS=your_database_password
    ```
-5. Start the application by running the command `php -S localhost:8000 -t public`
+6. Start the application by running the command `php -S localhost:8000 -t public`
 
 ## Usage
 
